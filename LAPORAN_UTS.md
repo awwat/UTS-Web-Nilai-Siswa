@@ -61,20 +61,20 @@
 > ![Data Siswa](screenshot/data_siswa.png)
 
 ### 4. Tambah Siswa
-> ![Tambah](screenshot/tambah siswa.png)
+> ![Tambah](screenshot/tambah_siswa.png)
 
 ### 5. Edit Siswa
-> ![Edit](screenshot/edit siswa.png)
+> ![Edit](screenshot/edit_siswa.png)
 
 ### 6. Konfirmasi Hapus
-> ![Hapus](screenshot/hapus siswa.png)
+> ![Hapus](screenshot/hapus_siswa.png)
 
 ### 7. Notifikasi Sukses
-> ![Sukses](screenshot/tambah berhasil.png)
+> ![Sukses](screenshot/tambah_berhasil.png)
 
-> ![Edit](screenshot/edit berhasil.png)
+> ![Edit](screenshot/edit_berhasil.png)
 
-> ![Hapus](screenshot/hapus berhasil.png)
+> ![Hapus](screenshot/hapus_berhasil.png)
 
 ---
 
