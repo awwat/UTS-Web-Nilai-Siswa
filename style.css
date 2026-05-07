@@ -1,0 +1,558 @@
+/**
+ * style.css
+ * Custom CSS tambahan
+ */
+
+/* GLOBAL */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+
+.sidebar .sidebar-header {
+    padding: 20px 16px;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.sidebar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.sidebar .nav-link.active {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-weight: 600;
+}
+
+.sidebar .btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* NAVBAR TOP */
+.navbar-top {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    z-index: 999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-top .dropdown-menu {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-left: 250px;
+    margin-top: 70px;
+    padding: 24px;
+    min-height: 100vh;
+}
+
+/* CARD UMUM */
+.card-custom {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 24px;
+    transition: all 0.3s;
+}
+
+/* STAT CARD (DASHBOARD) */
+.stat-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    transition: all 0.3s;
+    border: none;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.stat-card .icon-box {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: white;
+}
+
+.stat-card h2 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.stat-card p {
+    color: #888;
+    margin-bottom: 0;
+}
+
+/* WELCOME CARD */
+.card-welcome {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    border: none;
+}
+
+/* LOGIN CARD */
+.login-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 100%;
+    max-width: 440px;
+}
+
+.login-card h3 {
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.login-card p {
+    color: #888;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.btn-login {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    width: 100%;
+    color: white;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+/* FORM */
+.form-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* SEARCH BOX */
+.search-box {
+    border-radius: 12px;
+    padding: 10px 16px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.search-box:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.input-group .input-group-text {
+    border-radius: 12px 0 0 12px;
+    border: 2px solid #e0e0e0;
+    border-right: none;
+    background: white;
+}
+
+.input-group .search-box {
+    border-left: none;
+    border-radius: 0 12px 12px 0;
+}
+
+.input-group .search-box:focus {
+    border-left: none;
+}
+
+/* BUTTON */
+.btn-search {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-search:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.btn-simpan {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 28px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-simpan:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.btn-update {
+    background: linear-gradient(135deg, #f0ad4e, #ec971f);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 28px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-update:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(240, 173, 78, 0.4);
+    color: white;
+}
+
+.btn-aksi {
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+.btn-aksi:hover {
+    transform: translateY(-2px);
+}
+
+.btn-batal {
+    border-radius: 12px;
+    padding: 10px 28px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-batal:hover {
+    transform: translateY(-2px);
+}
+
+/* TABLE */
+.table-custom {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-custom thead th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 500;
+    padding: 14px 16px;
+    border: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.table-custom thead th:first-child {
+    border-radius: 12px 0 0 0;
+}
+
+.table-custom thead th:last-child {
+    border-radius: 0 12px 0 0;
+}
+
+.table-custom tbody td {
+    padding: 14px 16px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.table-custom tbody tr {
+    transition: all 0.2s;
+}
+
+.table-custom tbody tr:hover {
+    background: #f8f4ff;
+    transform: scale(1.005);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.table-custom tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 12px;
+}
+
+.table-custom tbody tr:last-child td:last-child {
+    border-radius: 0 0 12px 0;
+}
+
+.table-responsive {
+    border-radius: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* BADGE NILAI */
+.badge-nilai {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* RESPONSIVE - TABLET & MOBILE */
+@media (max-width: 991.98px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+        box-shadow: 5px 0 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-top {
+        left: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .navbar-top h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main-content {
+        padding: 16px;
+    }
+
+    .card-custom {
+        padding: 16px;
+    }
+
+    .card-welcome {
+        padding: 20px;
+    }
+
+    .login-card {
+        padding: 24px;
+        margin: 16px;
+    }
+
+    .stat-card {
+        padding: 16px;
+    }
+
+    .stat-card h2 {
+        font-size: 24px;
+    }
+
+    .table-custom thead th,
+    .table-custom tbody td {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .btn-aksi {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+
+    .badge-nilai {
+        padding: 4px 10px;
+        font-size: 11px;
+    }
+
+    .d-flex.gap-2 {
+        flex-wrap: wrap;
+    }
+
+    .btn-simpan,
+    .btn-update,
+    .btn-batal {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-top {
+        padding: 0 12px;
+    }
+
+    .navbar-top h5 {
+        font-size: 14px;
+    }
+
+    .login-card {
+        padding: 20px;
+    }
+
+    .login-card h3 {
+        font-size: 20px;
+    }
+
+    .stat-card .icon-box {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .stat-card h2 {
+        font-size: 20px;
+    }
+}
+
+/* ANIMASI TAMBAHAN */
+/* Pulse untuk ikon notifikasi */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.icon-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Fade in up untuk card */
+.card-custom.animate__fadeInUp,
+.stat-card.animate__fadeInUp,
+.card-welcome.animate__fadeInUp {
+    --animate-duration: 0.6s;
+}
+
+/* SCROLLBAR CUSTOM */
+.sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar {
+    height: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* PRINT */
+@media print {
+    .sidebar,
+    .navbar-top,
+    .btn-aksi,
+    .btn-search,
+    form {
+        display: none !important;
+    }
+
+    .main-content {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: white;
+    }
+
+    .card-custom {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
