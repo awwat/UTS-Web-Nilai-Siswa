@@ -58,7 +58,7 @@
 > ![Dashboard](screenshot/dashboard.png)
 
 ### 3. Data Siswa
-> ![Data Siswa](screenshot/data siswa.png)
+> ![Data Siswa](screenshot/data_siswa.png)
 
 ### 4. Tambah Siswa
 > ![Tambah](screenshot/tambah siswa.png)
