@@ -67,7 +67,7 @@
 > ![Edit](screenshot/edit_siswa.png)
 
 ### 6. Konfirmasi Hapus
-> ![Hapus](screenshot/hapus_siswa.png)
+> ![Hapus](screenshot/konfirmasi_hapus.png)
 
 ### 7. Notifikasi Sukses
 > ![Sukses](screenshot/tambah_berhasil.png)
